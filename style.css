@@ -1,0 +1,294 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+   
+    
+
+header
+{
+    width: 100%;
+    background-color: #00CAD1;
+    
+    
+}
+.secao-topo
+{
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    
+    padding: 20px;
+}
+.container-logo
+{
+    width: 300px;
+    height: 250px;
+}
+.container-logo img
+{
+    width: 100%;
+    height: 100%;
+}
+nav
+{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a
+{
+    
+   text-decoration: none;
+   font-size: 20px;
+   color: antiquewhite;
+}
+main
+{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.secao-home
+{
+    width: 100%;
+}
+.container-baner
+{
+    background: url(assets/recepcao2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.titulo-baner
+{
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    padding: 10px;
+}
+.container-sobre
+{
+    
+    font-size: 20px;
+    max-width: 668px;
+    
+    margin:  auto;
+}
+.container-texto
+{
+    
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    margin:20px 20px;
+}
+.container-lista
+{
+    padding: 10px;
+    display: flex;
+    
+}
+.container-lista img
+{
+    width: 500px;
+    object-fit: cover;
+}
+ul li
+{
+    padding: 5px;
+}
+.container 
+{
+    max-width: 1024px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+.container .container-texto
+{
+    max-width: 668px;
+    font-size: 20px;
+    margin: auto;
+}
+.container-tres-imagens
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    justify-content: space-evenly;
+    
+    
+    margin: 20px;
+}
+.container-tres-imagens img
+{
+   
+    height: 180px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px  rgb(53, 36, 36);
+}
+.container-contato
+{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 20px;
+}
+.container-contato span
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+.container-contato iframe
+{
+    width: 100%;
+    height: 300px;
+}
+footer
+{
+    
+    margin-top: 20px;
+    background-color: #0C6E71;
+    text-align: center;
+    padding: 10px;
+}
+footer img 
+{
+    height: 80px;
+}
+
+
+@media screen and ( max-width: 428px) {
+    
+    header
+    {
+        height: 100vh;
+        display: flex;
+    }
+    .secao-topo 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .secao-topo nav 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .secao-topo nav a 
+    {
+        background-color: antiquewhite;
+        border-radius: 6px;
+        color: black;
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+    }
+    .secao-home .container-baner 
+    {
+        display: none;
+    }
+    .container-lista img
+    {
+        display: none;
+        
+    }
+    
+    .secao-sobre
+    {
+        font-size: 15px;
+        text-align: center;
+    }
+    .container-lista 
+    {
+        text-align: center;
+    }
+    .container-lista li 
+    {
+        list-style:square;
+        
+    }
+    
+    .container
+    {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    .container-tres-imagens img 
+    
+    .container.container-texto 
+    {
+        padding: 20px;
+    }
+    footer 
+    {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+       
+    }
+    footer img 
+    {
+        width: 100px;
+        height: 50px;
+    }
+    main 
+    {
+        
+    }
+}
+
+
+@media (min-width:430px) and (max-width: 1200px) {
+    .container-baner 
+    {
+        height: 60vh;
+    }
+    .container-baner img 
+    {
+        object-fit: cover;
+    }
+    header {
+        height: 40vh;
+       
+        
+    }
+    .secao-topo 
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
